@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #04aa6d;
+    color: white;
+}
+footer {
+    background-color: #333;
+    padding: 14px 16px;
+    color: white;
+}
+h1 {
+    padding: 7px;
+}
+h2 {
+    padding: 7px;
+}
+p {
+    padding: 7px;
+    width: 750px;
+}
+img {
+    padding: 7px;
+    margin: 7px;
+}
+footer p {
+    display: inline;
+    margin-right: 1em;
+    text-align: center;
+}
+.footer {
+    text-align: center;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .container {
+    width: 700px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
