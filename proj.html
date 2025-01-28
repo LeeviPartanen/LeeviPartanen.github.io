@@ -2,45 +2,42 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Projektini</title>
+    <title>Leevi Partanen - Projektit</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="topnav">
-        <img src="logo.png" class="logo" width="160px" height="50px">
-        <a href="yht.html">Yhteystiedot</a>
-        <a href="proj.html" class="active">Projektini</a>
-        <a href="cv.html">CV</a>
-        <a href="index.html">Etusivu</a>
+    <div class="loader">
+        <img src="logo2.png" alt="Latauskuva">
     </div>
-    
-    <h1>Projektini</h1>
-    <p>Tällä sivulla esittelen opintojeni aikana kehittämiäni projekteja ja ohjelmointitaitojani. Olen työskennellyt sekä yksittäisten ohjelmointitehtävien että laajempien ohjelmistojen parissa.</p>
-    
-    <section class="projects">
-        <h2>C# - Tekstiseikkailupeli</h2>
-        <img src="tekstiseikkailupeli.PNG" alt="Tekstiseikkailupeli">
-        <p>Ohjelmoimani tekstiseikkailupeli, jossa pelaaja tekee valintoja, jotka vaikuttavat pelin kulkuun. Peli käyttää yksinkertaista logiikkaa ja pelaajan päätöksillä on suuri merkitys pelin lopputulokseen.</p>
 
-        <h2>C# - Arvauspeli</h2>
-        <img src="arvauspeli.PNG" alt="Arvauspeli">
-        <p>Tässä pelissä pelaaja arvaa satunnaisesti valitun luvun. Pelissä on aikaraja ja ohjelma laskee, kuinka kauan arvauksen tekeminen kesti.</p>
+    <div class="topnav">
+        <div class="logo-container">
+            <img src="logo.png" class="logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Etusivu</a>
+            <a href="cv.html">CV</a>
+            <a href="proj.html" class="active">Projektit</a>
+            <a href="yht.html">Yhteystiedot</a>
+        </div>
+    </div>
 
-        <h2>HTML ja CSS - Vuokra-asunnon etsintälomake</h2>
-        <img src="vuokraovi.PNG" alt="Vuokra-asunnon etsintälomake">
-        <p>Luomani lomake muistuttaa Vuokraovi.com-sivuston asunnon etsintälomaketta. Käytin HTML:ää rakenteen luomiseen ja CSS:ää tyylittelyyn.</p>
+    <header class="hero fade-in">
+        <h1>Projektini</h1>
+        <p>Esittelen merkittävimpiä projektejani.</p>
+    </header>
 
-        <h2>HTML ja CSS - Tiikerit</h2>
-        <img src="tiikerit.PNG" alt="Tiikerit">
-        <p>Tehtävässä luotiin tiikereistä kertovan sivun ulkoasu, joka mukautettiin esimerkin mukaan käyttämällä HTML:ää ja CSS:ää.</p>
+    <section class="intro fade-in">
+        <h2>RoboRacer</h2>
+        <p>Reaaliaikainen pelikehitysprojekti, jossa yhdistyvät robotiikka ja ohjelmistosuunnittelu.</p>
     </section>
 
     <footer>
-        <div class="footer">
-            <img src="logo2.png" width="70px" height="70px">
-            <p><a href="index.html">Etusivu</a> | <a href="cv.html">CV</a> | <a href="proj.html" class="active">Projektini</a> | <a href="yht.html">Yhteystiedot</a></p>
-            <p>040 720 7699 | partaleevi20@gmail.com</p>
-            <p>&copy; 2024 Leevi Partanen</p>
+        <div class="footer-content">
+            <img src="logo2.png" class="footer-logo">
+            <p><a href="index.html">Etusivu</a> | <a href="cv.html">CV</a> | <a href="proj.html">Projektit</a> | <a href="yht.html">Yhteystiedot</a></p>
+            <p>© 2024 Leevi Partanen</p>
         </div>
     </footer>
 </body>

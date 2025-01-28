@@ -2,47 +2,42 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Leevi Partanen - Ohjelmistokehittäjä</title>
+    <title>Leevi Partanen - Etusivu</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="loader">
+        <img src="logo2.png" alt="Latauskuva">
+    </div>
+
     <div class="topnav">
         <div class="logo-container">
-            <img src="logo.png" class="logo" width="160px" height="50px">
+            <img src="logo.png" class="logo">
         </div>
         <div class="nav-links">
-            <a href="yht.html">Yhteystiedot</a>
-            <a href="proj.html">Projektini</a>
-            <a href="cv.html">CV</a>
             <a href="index.html" class="active">Etusivu</a>
+            <a href="cv.html">CV</a>
+            <a href="proj.html">Projektit</a>
+            <a href="yht.html">Yhteystiedot</a>
         </div>
     </div>
-    
-    <header class="hero">
+
+    <header class="hero fade-in">
         <h1>Leevi Partanen</h1>
-        <p>Ohjelmistokehittäjäopiskelija | Pelikehitys | Robotiikka | Tekoäly</p>
+        <p>Ohjelmistokehittäjä | Pelikehitys | Robotiikka | Tekoäly</p>
     </header>
 
-    <section class="intro">
-        <p>Olen intohimoinen ohjelmoinnista ja robotiikasta, ja pyrin kehittämään taitojani jatkuvasti. Tavoitteeni on luoda innovatiivisia ja tehokkaita ratkaisuja niin pienille projekteille kuin suuremmillekin järjestelmille. Tässä esittelen osaamistani, projektejani ja kokemustani.</p>
-    </section>
-
-    <section class="highlights">
-        <h2>Osaamisalueeni</h2>
-        <ul>
-            <li><strong>Ohjelmointi</strong>: C#, Python, JavaScript</li>
-            <li><strong>Pelikehitys</strong>: Unity, Unreal Engine</li>
-            <li><strong>Robotiikka</strong>: Raspberry Pi, GoPiGo 3</li>
-            <li><strong>Tekoäly</strong>: Koneoppiminen ja tekoälyn hyödyntäminen ohjelmoinnissa</li>
-        </ul>
+    <section class="intro fade-in">
+        <h2>Tervetuloa!</h2>
+        <p>Täällä voit tutustua osaamiseeni, projekteihini ja tavoitteisiini.</p>
     </section>
 
     <footer>
         <div class="footer-content">
-            <img src="logo2.png" width="70px" height="70px">
-            <p><a href="index.html">Etusivu</a> | <a href="cv.html">CV</a> | <a href="proj.html">Projektini</a> | <a href="yht.html">Yhteystiedot</a></p>
-            <p>040 720 7699 | partaleevi20@gmail.com</p>
-            <p>&copy; 2024 Leevi Partanen</p>
+            <img src="logo2.png" class="footer-logo">
+            <p><a href="index.html">Etusivu</a> | <a href="cv.html">CV</a> | <a href="proj.html">Projektit</a> | <a href="yht.html">Yhteystiedot</a></p>
+            <p>© 2024 Leevi Partanen</p>
         </div>
     </footer>
 </body>
