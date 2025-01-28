@@ -8,42 +8,34 @@
 <body>
     <div class="topnav">
         <img src="logo.png" class="logo" width="160px" height="50px">
-        <a href="yht.html">Yhteystiedot</a>
+        <a href="yht.html" class="active">Yhteystiedot</a>
         <a href="proj.html">Projektini</a>
         <a href="cv.html">CV</a>
         <a href="index.html">Etusivu</a>
     </div>
+    
     <h1>Yhteystiedot</h1>
-    <p style="font-size: larger;">&#9990; 040 720 7699</p>
-    <p style="font-size: larger;">&#9993; partaleevi20@gmail.com</p>
-    <p>Alla esimerkki yhteydenottolomakkeesta. Siinä on pelkkä ulkoasu, ei toiminnallisuutta.</p>
-    <div class="container">
-        <form>
-            <label for="fname">Etunimi</label>
-            <input type="text" id="fname" name="firstname" placeholder="Etunimesi...">
-            <label for="lname">Sukunimi</label>
-            <input type="text" id="lname" name="lastname" placeholder="Sukunimesi...">
-            <label for="subject">Viesti</label>
-            <textarea id="subject" name="subject" placeholder="Viestisi..." style="height: 200px;">
-            </textarea>
-            <input type="submit" value="Lähetä">
-        </form>
-    </div>
-    <br>
+    <p>Voit ottaa yhteyttä minuun alla olevien yhteystietojen kautta:</p>
+    
+    <section class="contact">
+        <h2>Puhelin</h2>
+        <p>040 720 7699</p>
+
+        <h2>Sähköposti</h2>
+        <p>partaleevi20@gmail.com</p>
+
+        <h2>LinkedIn</h2>
+        <p><a href="https://www.linkedin.com/in/leevi-partanen/">LinkedIn-profiilini</a></p>
+
+        <h2>GitHub</h2>
+        <p><a href="https://github.com/leevi-partanen">GitHub-profiilini</a></p>
+    </section>
+
     <footer>
         <div class="footer">
             <img src="logo2.png" width="70px" height="70px">
-            <br>
-            <p><a style="color: white;" href="index.html">Etusivu</a></p>
-            <p><a style="color: white;" href="cv.html">CV</a></p>
-            <p><a style="color: white;" href="proj.html">Projektini</a></p>
-            <p><a style="color: white;" href="yht.html">Yhteystiedot</a></p>
-            <br><br>
-            <p><a style="color: white;" href="eng.html">In English</a></p>
-            <br><br>
-            <p>040 720 7699</p>
-            <p>partaleevi20@gmail.com</p>
-            <br><br>
+            <p><a href="index.html">Etusivu</a> | <a href="cv.html">CV</a> | <a href="proj.html">Projektini</a> | <a href="yht.html" class="active">Yhteystiedot</a></p>
+            <p>040 720 7699 | partaleevi20@gmail.com</p>
             <p>&copy; 2024 Leevi Partanen</p>
         </div>
     </footer>

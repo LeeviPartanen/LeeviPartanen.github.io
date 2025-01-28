@@ -9,52 +9,37 @@
     <div class="topnav">
         <img src="logo.png" class="logo" width="160px" height="50px">
         <a href="yht.html">Yhteystiedot</a>
-        <a href="proj.html">Projektini</a>
+        <a href="proj.html" class="active">Projektini</a>
         <a href="cv.html">CV</a>
         <a href="index.html">Etusivu</a>
     </div>
+    
     <h1>Projektini</h1>
-    <p>Tällä sivulla esittelen enimmäkseen ohjelmointiin liittyviä projekteja, joita olen tehnyt opintojeni aikana.</p>
-    <br>
-    <h2>C#</h2>
-    <img src="tekstiseikkailupeli.PNG" alt="Tekstiseikkailupeli">
-    <p>Yläpuolella näet pätkän koodia. Koodista muodostuu tekstiseikkailupeli. Pelaaja seuraa tarinaa tekstinä. Pelaajan täytyy tehdä valintoja, jotka vaikuttavat pelin kulkuun.
-        Pelin voi voittaa vain tekemällä oikeat valinnat.
-    </p>
-    <img src="tekstiseikkailupeli2.PNG" alt="Tekstiseikkailupeli2">
-    <p>Tässä vielä kuva siitä, miltä pelin kulku näyttää.</p>
-    <br>
-    <img src="arvauspeli.PNG" alt="Arvauspeli">
-    <p>Tässä toisenlainen koodinpätkä. Kyseessä on siis arvauspeli, joka arpoo satunnaisen kokonaisluvun ja pyytää käyttäjää arvaamaan sen.
-        Ohjelma kertoo, onko luku käyttäjän arvausta pienempi vai suurempi. Ohjelma näyttää lopuksi, kuinka monta sekunttia käyttäjällä meni arvata
-        oikea luku.
-    </p>
-    <br>
-    <h2>HTML ja CSS</h2>
-    <img src="vuokraovi.PNG" alt="Vuokra-asunnon etsintälomake">
-    <p>Tässä kuva tehtävästä, jossa piti luoda vuokra-asunnon etsintälomake samaan tyyliin kuin Vuokraovi.com-sivulla. Ensin lisättiin tarvittavat elementit
-        käyttäen HTML:ää ja sitten annettiin tyylimääritykset, kuten väri ja asettelu CSS:lä.
-    </p>
-    <br>
-    <img src="tiikerit.PNG" alt="Tiikerit">
-    <p>Tässä tehtävässä annettiin valmis teksti tiikereistä ja esimerkkikuva siitä, miltä valmiin sivun tulisi näyttää. Sitten nettisivulle piti lisätä 
-        tyylimäärityksiä ja saada sivu näyttämään mahdollisimman samalta kuin esimerkissä.
-    </p>
-    <br>
+    <p>Tällä sivulla esittelen opintojeni aikana kehittämiäni projekteja ja ohjelmointitaitojani. Olen työskennellyt sekä yksittäisten ohjelmointitehtävien että laajempien ohjelmistojen parissa.</p>
+    
+    <section class="projects">
+        <h2>C# - Tekstiseikkailupeli</h2>
+        <img src="tekstiseikkailupeli.PNG" alt="Tekstiseikkailupeli">
+        <p>Ohjelmoimani tekstiseikkailupeli, jossa pelaaja tekee valintoja, jotka vaikuttavat pelin kulkuun. Peli käyttää yksinkertaista logiikkaa ja pelaajan päätöksillä on suuri merkitys pelin lopputulokseen.</p>
+
+        <h2>C# - Arvauspeli</h2>
+        <img src="arvauspeli.PNG" alt="Arvauspeli">
+        <p>Tässä pelissä pelaaja arvaa satunnaisesti valitun luvun. Pelissä on aikaraja ja ohjelma laskee, kuinka kauan arvauksen tekeminen kesti.</p>
+
+        <h2>HTML ja CSS - Vuokra-asunnon etsintälomake</h2>
+        <img src="vuokraovi.PNG" alt="Vuokra-asunnon etsintälomake">
+        <p>Luomani lomake muistuttaa Vuokraovi.com-sivuston asunnon etsintälomaketta. Käytin HTML:ää rakenteen luomiseen ja CSS:ää tyylittelyyn.</p>
+
+        <h2>HTML ja CSS - Tiikerit</h2>
+        <img src="tiikerit.PNG" alt="Tiikerit">
+        <p>Tehtävässä luotiin tiikereistä kertovan sivun ulkoasu, joka mukautettiin esimerkin mukaan käyttämällä HTML:ää ja CSS:ää.</p>
+    </section>
+
     <footer>
         <div class="footer">
             <img src="logo2.png" width="70px" height="70px">
-            <br>
-            <p><a style="color: white;" href="index.html">Etusivu</a></p>
-            <p><a style="color: white;" href="cv.html">CV</a></p>
-            <p><a style="color: white;" href="proj.html">Projektini</a></p>
-            <p><a style="color: white;" href="yht.html">Yhteystiedot</a></p>
-            <br><br>
-            <p><a style="color: white;" href="eng.html">In English</a></p>
-            <br><br>
-            <p>040 720 7699</p>
-            <p>partaleevi20@gmail.com</p>
-            <br><br>
+            <p><a href="index.html">Etusivu</a> | <a href="cv.html">CV</a> | <a href="proj.html" class="active">Projektini</a> | <a href="yht.html">Yhteystiedot</a></p>
+            <p>040 720 7699 | partaleevi20@gmail.com</p>
             <p>&copy; 2024 Leevi Partanen</p>
         </div>
     </footer>
