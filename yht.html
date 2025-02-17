@@ -7,34 +7,41 @@
 </head>
 <body>
     <div class="topnav">
-        <img src="logo.png" width="160px" height="50px">
-        <a href="engYht.html">Contact</a>
-        <a href="engProj.html">Projects</a>
-        <a href="engCv.html">CV</a>
-        <a href="eng.html">Home</a>
+        <img src="logo.png" class="logo" width="160px" height="50px">
+        <a href="index.html">Etusivu</a>
+        <a href="cv.html">CV</a>
+        <a href="proj.html">Projektini</a>
+        <a href="yht.html">Yhteystiedot</a>
     </div>
 
-    <header class="hero fade-in">
-        <h1>Ota yhteyttä</h1>
-        <p>Voit tavoittaa minut seuraavilla tiedoilla.</p>
-    </header>
-
-    <section class="intro fade-in">
-        <h2>Yhteystiedot</h2>
-        <p>Sähköposti: partaleevi20@gmail.com</p>
-        <p>Puhelin: 040 720 7699</p>
-    </section>
+    <h1>Yhteystiedot</h1><br>
+    <h2>Leevi Partanen</h2>
+    <p style="font-size: larger;">&#9990; 040 720 7699</p>
+    <p style="font-size: larger;">&#9993; partaleevi20@gmail.com</p>
+    <p>Alla on esimerkki yhteydenottolomakkeesta. Siinä on vain ulkoasu, ei toiminnallisuutta.</p>
+    <div class="container">
+        <form>
+            <label for="fname">Etunimi</label>
+            <input type="text" id="fname" name="firstname" placeholder="Etunimesi...">
+            <label for="lname">Sukunimi</label>
+            <input type="text" id="lname" name="lastname" placeholder="Sukunimesi...">
+            <label for="subject">Viesti</label>
+            <textarea id="subject" name="subject" placeholder="Kirjoita viestisi tähän..." style="height: 200px;">
+            </textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
 
     <footer>
         <div class="footer">
             <img src="logo2.png" width="70px" height="70px">
             <br>
-            <p><a style="color: white;" href="eng.html">Home</a></p>
-            <p><a style="color: white;" href="engCv.html">CV</a></p>
-            <p><a style="color: white;" href="engProj.html">Projects</a></p>
-            <p><a style="color: white;" href="engYht.html">Contact</a></p>
+            <p><a style="color: white;" href="index.html">Etusivu</a></p>
+            <p><a style="color: white;" href="cv.html">CV</a></p>
+            <p><a style="color: white;" href="proj.html">Projektini</a></p>
+            <p><a style="color: white;" href="yht.html">Yhteystiedot</a></p>
             <br><br>
-            <p><a style="color: white;" href="index.html">Suomeksi</a></p>
+            <p><a style="color: white;" href="eng.html">In English</a></p>
             <br><br>
             <p>040 720 7699</p>
             <p>partaleevi20@gmail.com</p>
