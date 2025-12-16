@@ -2,48 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="proj.css">
 </head>
 <body>
     <div class="topnav">
         <img src="logo.png" class="logo" width="160px" height="50px">
         <a href="eng.html">Home</a>
         <a href="engCv.html">CV</a>
-        <a href="engProj.html">Projects</a>
+        <a href="engProj.html">My Projects</a>
         <a href="engYht.html">Contact</a>
     </div>
-    <h1>Projects</h1>
-    <p>On this page I present mostly programming-related projects that I have done during my studies. Unfortunately all these examples are in Finnish.</p>
-    <br>
-    <h2>C#</h2>
-    <img src="tekstiseikkailupeli.PNG" alt="Text adventure game">
-    <p>Above you can see a snippet of code. The code becomes a text adventure game. The player follows the story as text. The player must make choices that affect the course of the game.
-        The game can only be won by making the right choices.</p>
-    <img src="tekstiseikkailupeli2.PNG" alt="Text adventure game2">
-    <p>Here's another picture of what the gameplay looks like.</p>
-    <br>
-    <img src="arvauspeli.PNG" alt="Guessing game">
-    <p>Here's a different code snippet. So it is a guessing game that draws a random integer and asks the user to guess it.
-        The program tells whether the number is lower or higher than the user's guess. The program finally shows how many seconds it took the user to guess
-        correct number.</p>
-    <br>
-    <h2>HTML and CSS</h2>
-    <img src="vuokraovi.PNG" alt="Rental apartment search form">
-    <p>Here is a picture of a task where you had to create a search form for a rental apartment in the same style as on the Vuokraovi.com page. First, the necessary elements were added
-        using HTML and then given style specifications such as color and layout with CSS.</p>
-    <br>
-    <img src="tiikerit.PNG" alt="Tigers">
-    <p>In this task, a finished text about tigers and an example picture of what the finished page should look like were given. Then it had to be added to the website
-        style definitions and make the page look as similar as possible to the example.</p>
-    <br>
+
+    <!-- NAVIGATION SIDEBAR -->
+    <div class="side-nav">
+        <h3>Projects</h3>
+        <a href="#csharp">C#</a>
+        <a href="#htmlcss">HTML & CSS</a>
+        <a href="#js">JavaScript</a>
+        <a href="#iot">IoT & Robotics</a>
+        <a href="#muut">Other</a>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+        <h1>My Projects</h1>
+
+        <h2 id="csharp">C#</h2>
+        <div class="project-block">
+            <h3>Tic-Tac-Toe</h3>
+            <p>
+                I built a Tic-Tac-Toe game using Windows Forms where two players can play on a single device.
+                The program checks the game state after each move and automatically detects a win or a draw.
+            </p>
+            <br>
+            <img src="Projektikuvat/Ristinollapeli.png" alt="Tic-Tac-Toe">
+            <a href="https://github.com/LeeviPartanen/Ristinolla/" target="_blank">GitHub</a>
+            <br><br><br>
+
+            <h3>Calculator</h3>
+            <p>
+                I created a calculator using Windows Forms that can perform basic arithmetic operations
+                as well as square root and power calculations. The calculator supports decimal numbers
+                and negative values.
+            </p>
+            <br>
+            <img src="Projektikuvat/Laskin.png" alt="Calculator">
+        </div>
+
+        <h2 id="htmlcss">HTML + CSS</h2>
+        <div class="project-block">
+            <h3>Tarinatupa</h3>
+            <p>
+                In this school project, we built websites for fictional companies. Tarinatupa is a bookstore
+                and lending service whose website allows users to search, buy, and borrow books. The site
+                also includes an efficient search feature and filters. The project mainly used HTML, CSS,
+                and JavaScript.
+            </p>
+            <br>
+            <img src="Projektikuvat/Tarinatupa.png" alt="Tarinatupa">
+            <br><br><br>
+
+            <h3>Kotkantie Painting and Wallpapering</h3>
+            <p>
+                Kotkantie Painting and Wallpapering is a fictional company whose website advertises their
+                services. The site includes company information, a gallery, and a color testing section
+                where users can try different color combinations. In this project, I used HTML, CSS,
+                and JavaScript.
+            </p>
+            <br>
+            <img src="Projektikuvat/Kotkantien_maalaus1.png" alt="Kotkantie Painting and Wallpapering">
+            <br>
+            <img src="Projektikuvat/Kotkantien_maalaus2.png" alt="Color testing">
+            <a href="https://github.com/LeeviPartanen/Kotkantien-Maalaus-ja-Tapetointi" target="_blank">GitHub</a>
+        </div>
+
+        <h2 id="js">JavaScript</h2>
+        <div class="project-block">
+            <h3>Audio Visualizer</h3>
+            <p>
+                A JavaScript-based page where users can upload almost any audio file, which the application
+                visualizes in real time using frequency bars.
+            </p>
+            <br>
+            <img src="Projektikuvat/Interactive_audio_visualizer.png" alt="Audio visualizer">
+            <a href="https://github.com/LeeviPartanen/Interactive-Music-Visualizer" target="_blank">GitHub</a>
+            <br><br><br>
+
+            <h3>Guessing Game</h3>
+            <p>
+                A simple guessing game where the user must guess a randomly selected number between 1 and 100.
+                The game counts the number of attempts and measures the time it takes to guess the correct number.
+                After each guess, the game provides a hint indicating whether the correct number is higher or lower.
+            </p>
+            <br>
+            <img src="Projektikuvat/Arvauspeli.png" alt="Guessing game">
+        </div>
+
+        <h2 id="iot">IoT & Robotics</h2>
+        <div class="project-block">
+            <h3>Surveillance System</h3>
+            <p>
+                In this project, I built a surveillance system for a Raspberry Pi using a PIR sensor and a camera.
+                When the PIR sensor detects motion, the program automatically starts video recording.
+                The system includes a web interface where users can view the camera feed in real time and
+                stop the recording manually. The recording is also set to stop automatically after 30 minutes
+                if the user is not present. Video recordings are stored on the Raspberry Pi.
+                The project uses Python and Flask for the web interface.
+            </p>
+            <br>
+            <img src="Projektikuvat/Valvontajärjestelmä1.png" alt="Surveillance system">
+            <br>
+            <img src="Projektikuvat/Valvontajärjestelmä2.png" alt="Web interface">
+        </div>
+
+        <h2 id="muut">Other</h2>
+        <div class="project-block">
+            <h3>Energy Management Dashboard</h3>
+            <p>
+                This React + Vite application displays the current electricity market price and plots
+                a graph of electricity prices over the course of the day. The application also shows
+                the weather and provides suggestions on when it would be most cost-effective to use
+                electricity based on price fluctuations. The example application uses mock data for
+                electricity prices but can easily be connected to a real API.
+            </p>
+            <br>
+            <img src="Projektikuvat/Energianhallintapaneeli.png" alt="Energy management dashboard">
+            <a href="https://github.com/LeeviPartanen/Smart-Energy-Dashboard" target="_blank">GitHub</a>
+        </div>
+    </div>
+
     <footer>
         <div class="footer">
             <img src="logo2.png" width="70px" height="70px">
             <br>
             <p><a style="color: white;" href="eng.html">Home</a></p>
             <p><a style="color: white;" href="engCv.html">CV</a></p>
-            <p><a style="color: white;" href="engProj.html">Projects</a></p>
+            <p><a style="color: white;" href="engProj.html">My Projects</a></p>
             <p><a style="color: white;" href="engYht.html">Contact</a></p>
             <br><br>
             <p><a style="color: white;" href="index.html">Suomeksi</a></p>
