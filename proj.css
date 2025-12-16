@@ -1,0 +1,190 @@
+/* YLEISET ASETUKSET */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9fc;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* YLÄNAVIGAATIO */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topnav .logo {
+    display: block;
+    margin: 0;
+    margin-right: auto;
+}
+
+.topnav a {
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.topnav a.active {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* ------------------------------------------- */
+/*                SIVUNAVIGAATIO               */
+/* ------------------------------------------- */
+.side-nav {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    width: 180px;
+    height: auto;
+    background: transparent;          /* EI TAUSTAA */
+    padding: 0;
+    box-shadow: none;                  /* EI VARJOA */
+    z-index: 5;
+}
+
+.side-nav h3 {
+    color: #475569;
+    margin: 0 0 12px;
+    padding-left: 8px;   /* sama kohta kuin linkin teksti */
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.side-nav a {
+    display: block;
+    padding: 6px 4px 6px 6px;
+    margin: 2px 0;
+    color: #334155;
+    text-decoration: none;
+    font-size: 14px;
+    border-left: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.side-nav a:hover {
+    color: #2563eb;
+    border-left-color: #2563eb; /* EI muuta layoutia */
+}
+
+
+/* ------------------------------------------- */
+/*                 SIVUN SISÄLTÖ               */
+/* ------------------------------------------- */
+.page-content {
+    max-width: 1000px;
+    margin: 0 auto;                 /* keskitys */
+    padding: 20px 20px 40px;
+}
+
+.page-content h1 {
+    color: #1e3a8a;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.page-content h2 {
+    color: #1e3a8a;
+    margin: 30px 0 6px;
+    text-align: center;
+}
+
+/* Poistetaan ylimääräinen tila heti h2:n jälkeen */
+.page-content h2 + p,
+.page-content h2 + .project-block {
+    margin-top: 0;
+}
+
+p {
+    margin: 6px auto 12px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+img {
+    margin: 10px auto;
+    display: block;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ------------------------------------------- */
+/*             PROJEKTIBLOKIT                  */
+/* ------------------------------------------- */
+.project-block {
+    width: 100%;
+    max-width: 800px;
+    margin: 12px auto 30px; /* ei ylimääräistä yläväliä */
+    padding: 20px;
+}
+
+/* ------------------------------------------- */
+/*                 FOOTER                      */
+/* ------------------------------------------- */
+footer {
+    background-color: #333; /* Matching gray */
+    color: #f0f4f8;
+    padding: 40px 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ------------------------------------------- */
+/*                 MOBIILI                     */
+/* ------------------------------------------- */
+@media (max-width: 900px) {
+
+    .side-nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        box-shadow: none;
+        padding-bottom: 10px;
+    }
+
+    .side-nav h3 {
+        margin-top: 10px;
+    }
+
+    .side-nav a {
+        border-left: none;
+        border-bottom: 1px solid #475569;
+        padding: 15px;
+    }
+
+    .page-content {
+        margin-left: 0;
+        padding: 20px 10px 40px;
+    }
+}

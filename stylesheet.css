@@ -47,9 +47,10 @@ body {
 footer {
     background-color: #333; /* Matching gray */
     color: #f0f4f8;
-    padding: 20px;
-    text-align: center;
+    padding: 40px 20px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
 }
 
 footer p {
@@ -118,6 +119,7 @@ input[type=submit]:hover {
 
 .footer {
     text-align: center;
+    max-width: 400px;
     font-size: 14px;
     color: #f0f4f8;
 }

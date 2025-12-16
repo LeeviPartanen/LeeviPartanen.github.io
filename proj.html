@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Projektini</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="proj.css">
 </head>
 <body>
     <div class="topnav">
@@ -13,34 +13,118 @@
         <a href="proj.html">Projektini</a>
         <a href="yht.html">Yhteystiedot</a>
     </div>
-    <h1>Projektini</h1>
-    <p>Tällä sivulla esittelen enimmäkseen ohjelmointiin liittyviä projekteja, joita olen tehnyt opintojeni aikana.</p>
-    <br>
-    <h2>C#</h2>
-    <img src="tekstiseikkailupeli.PNG" alt="Tekstiseikkailupeli">
-    <p>Yläpuolella näet pätkän koodia. Koodista muodostuu tekstiseikkailupeli. Pelaaja seuraa tarinaa tekstinä. Pelaajan täytyy tehdä valintoja, jotka vaikuttavat pelin kulkuun.
-        Pelin voi voittaa vain tekemällä oikeat valinnat.
-    </p>
-    <img src="tekstiseikkailupeli2.PNG" alt="Tekstiseikkailupeli2">
-    <p>Tässä vielä kuva siitä, miltä pelin kulku näyttää.</p>
-    <br>
-    <img src="arvauspeli.PNG" alt="Arvauspeli">
-    <p>Tässä toisenlainen koodinpätkä. Kyseessä on siis arvauspeli, joka arpoo satunnaisen kokonaisluvun ja pyytää käyttäjää arvaamaan sen.
-        Ohjelma kertoo, onko luku käyttäjän arvausta pienempi vai suurempi. Ohjelma näyttää lopuksi, kuinka monta sekunttia käyttäjällä meni arvata
-        oikea luku.
-    </p>
-    <br>
-    <h2>HTML ja CSS</h2>
-    <img src="vuokraovi.PNG" alt="Vuokra-asunnon etsintälomake">
-    <p>Tässä kuva tehtävästä, jossa piti luoda vuokra-asunnon etsintälomake samaan tyyliin kuin Vuokraovi.com-sivulla. Ensin lisättiin tarvittavat elementit
-        käyttäen HTML:ää ja sitten annettiin tyylimääritykset, kuten väri ja asettelu CSS:lä.
-    </p>
-    <br>
-    <img src="tiikerit.PNG" alt="Tiikerit">
-    <p>Tässä tehtävässä annettiin valmis teksti tiikereistä ja esimerkkikuva siitä, miltä valmiin sivun tulisi näyttää. Sitten nettisivulle piti lisätä 
-        tyylimäärityksiä ja saada sivu näyttämään mahdollisimman samalta kuin esimerkissä.
-    </p>
-    <br>
+
+    <!-- NAVIGAATIOPALKKI -->
+    <div class="side-nav">
+        <h3>Projektit</h3>
+        <a href="#csharp">C#</a>
+        <a href="#htmlcss">HTML & CSS</a>
+        <a href="#js">JavaScript</a>
+        <a href="#iot">IoT & Robotiikka</a>
+        <a href="#muut">Muut</a>
+    </div>
+
+    <!-- SIVUN SISÄLTÖ -->
+    <div class="page-content">
+        <h1>Projektini</h1>
+
+        <!-- Täytä sisältö itse tästä eteenpäin -->
+        <h2 id="csharp">C#</h2>
+        <div class="project-block">
+            <h3>Ristinollapeli</h3>
+            <p>Rakensin Windows Forms Apilla ristinollapelin, jossa kaksi pelaajaa voivat pelata 
+                yhdellä laitteella ristinollaa. Ohjelma tarkistaa pelin tilanteen jokaisen siirron 
+                jälkeen ja tunnistaa automaattisesti voiton tai tasapelin.
+            </p>
+            <br>
+            <img src="Projektikuvat/Ristinollapeli.png" alt="Ristinollapeli">
+            <a href="https://github.com/LeeviPartanen/Ristinolla/" target="_blank">GitHub</a>
+            <br><br><br>
+
+            <h3>Laskin</h3>
+            <p>Tein Windows Forms Apilla laskimen, joka osaa suorittaa peruslaskutoimistusten lisäksi 
+                myös neliöjuuren ja potenssilaskut. Laskin osaa käsitellä desimaalilukuja sekä negatiivisia lukuja.
+            </p>
+            <br>
+            <img src="Projektikuvat/Laskin.png" alt="Laskin">
+        </div>
+
+        <h2 id="htmlcss">HTML + CSS</h2>
+        <div class="project-block">
+            <h3>Tarinatupa</h3>
+            <p>Tässä kouluprojektissa rakensimme kuvitteellisille yrityksille nettisivuja. Tarinatupa on kirjakauppa ja 
+                lainaamo, jonka nettisivuilla voi etsiä sekä ostaa tai lainata kirjoja. Sivustolla on myös 
+                tehokas hakutoiminto ja suodattimet. Enimmäkseen projektissa käytettiin HTML:ää, CSS:ää ja 
+                JavaScriptiä.
+            </p>
+            <br>
+            <img src="Projektikuvat/Tarinatupa.png" alt="Tarinatupa">
+            <br><br><br>
+
+            <h3>Kotkantien Maalaus ja Tapetointi</h3>
+            <p>Kotkantien Maalaus ja Tapetointi on kuvitteellinen yritys, jonka nettisivuilla mainostetaan heidän 
+                palveluitaan. Sivustolta löytyy tietoa yrityksestä, galleria sekä värien testausosio, jossa 
+                käyttäjä voi kokeilla erilaisia väriyhdistelmiä. Projektissa käytin HTML:ää, CSS:ää ja 
+                JavaScriptiä.
+            </p>
+            <br>
+            <img src="Projektikuvat/Kotkantien_maalaus1.png" alt="Kotkantien Maalaus ja Tapetointi">
+            <br>
+            <img src="Projektikuvat/Kotkantien_maalaus2.png" alt="Värien testaus">
+            <a href="https://github.com/LeeviPartanen/Kotkantien-Maalaus-ja-Tapetointi" target="_blank">GitHub</a>
+        </div>
+
+        <h2 id="js">JavaScript</h2>
+        <div class="project-block">
+            <h3>Äänen visualisoija</h3>
+            <p>JavaScript-sivu, johon käyttäjä voi liittää lähes minkä tahansa äänitiedoston, jonka sovellus 
+                visualisoi taajuuspalkeilla reaaliajassa.
+            </p>
+            <br>
+            <img src="Projektikuvat/Interactive_audio_visualizer.png" alt="Äänen visualisoija">
+            <a href="https://github.com/LeeviPartanen/Interactive-Music-Visualizer" target="_blank">GitHub</a>
+            <br><br><br>
+
+            <h3>Arvauspeli</h3>
+            <p>Yksinkertainen arvauspeli, jossa käyttäjän tulee arvata satunnasesti valittu luku 
+                väliltä 1-100. Peli laskee yritysten määrän sekä ajan, kuinka kauan luvun arvaamisessa 
+                kesti. Jokaisen arvauksen jälkeen peli antaa vihjeen, onko oikea luku suurempi vai pienempi.
+            </p>
+            <br>
+            <img src="Projektikuvat/Arvauspeli.png" alt="Arvauspeli">
+        </div>
+
+        <h2 id="iot">IoT & Robotiikka</h2>
+        <div class="project-block">
+            <h3>Valvontajärjestelmä</h3>
+            <p>Tässä projektissa rakensin valvontajärjestelmän Raspberry Pi:lle käyttäen hyödyksi 
+                PIR-anturia sekä kameraa. Kun PIR-anturi havaitsee liikettä, ohjelma aloittaa automaattisesti 
+                videon tallennuksen. Ohjelmassa on web-käyttöliittymä, josta käyttäjä voi seurata kameraa 
+                reaaliajassa. Webissä on myös nappi, jota painamalla käyttäjä voi keskeyttää tallennuksen. 
+                Videon tallennus on ajastettu päättymään itsestään puolen tunnin kuluttua, mikäli käyttäjä ei ole paikalla. 
+                Videotallenteet tallentuvat Raspberry Pi:lle. Projektissa käytin Pythonia sekä Flaskia web-käyttöliittymään.
+            </p>
+            <br>
+            <img src="Projektikuvat/Valvontajärjestelmä1.png" alt="Valvontajärjestelmä">
+            <br>
+            <img src="Projektikuvat/Valvontajärjestelmä2.png" alt="Web-käyttöliittymä">
+        </div>
+
+        <h2 id="muut">Muut</h2>
+        <div class="project-block">
+            <h3>Energianhallintapaneeli</h3>
+            <p>Tämä React + Vite-sovellus kertoo nykyisen pörssisähkön hinnan sekä piirtää käyrää 
+                sähkön hinnasta vuorokauden aikana. Sovellus myös näyttää sään ja antaa käyttäjälle 
+                ehdotuksia, milloin olisi edullisinta käyttää sähköä hinnan vaihtelun mukaan. 
+                Esimerkkisovellus käyttää pörssisähkössä mock-dataa, mutta sen voi helposti yhdistää 
+                oikeaan API:iin.
+            </p>
+            <br>
+            <img src="Projektikuvat/Energianhallintapaneeli.png" alt="Energianhallintapaneeli">
+            <a href="https://github.com/LeeviPartanen/Smart-Energy-Dashboard" target="_blank">GitHub</a>
+        </div>
+    </div>
+
     <footer>
         <div class="footer">
             <img src="logo2.png" width="70px" height="70px">
@@ -55,7 +139,7 @@
             <p>040 720 7699</p>
             <p>partaleevi20@gmail.com</p>
             <br><br>
-            <p>&copy; 2024 Leevi Partanen</p>
+            <p>&copy; 2025 Leevi Partanen</p>
         </div>
     </footer>
 </body>
