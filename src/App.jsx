@@ -10,15 +10,15 @@ const content = {
     hero: {
       greeting: "Hei, olen",
       name: "Leevi Partanen",
-      tagline: "Valmistunut ohjelmistokehittäjä Oulusta. Rakennan asioita uteliaisuudesta.",
+      tagline: "Nuori ohjelmistokehittäjä Oulusta. Rakennan asioita uteliaisuudesta.",
       cta: "Katso projektini",
       contact: "Ota yhteyttä",
     },
     about: {
       title: "Minusta",
       body: [
-        "Olen 19-vuotias ohjelmistokehittäjä, joka valmistui OSAOlta joulukuussa 2025. Aloitin koodaamisen koulutehtävänä 16-vuotiaana — se oli yksinkertainen portfolio HTML:llä ja CSS:llä. Siitä lähtien olen rakentanut paljon enemmän.",
-        "Minua kiinnostaa sulautetut järjestelmät, web-kehitys ja tekoäly. Pidän siitä, kun asiat toimivat oikeasti — ei vain teoriassa. Harjoittelujaksollani SkyLED Finland OY:lla suunnittelin ja toteutin React-komponentteja oikeassa tuotantoympäristössä.",
+        "Olen 19-vuotias ohjelmistokehittäjä Oulusta. Minua kiinnostaa web-kehitys, sulautetut järjestelmät ja tekoäly. Pidän siitä, kun asiat toimivat oikeasti — ei vain teoriassa.",
+        "Harjoittelujaksollani SkyLED Finland OY:lla suunnittelin ja toteutin React-komponentteja oikeassa tuotantoympäristössä. Se vahvisti sen, mitä jo tiesin — haluan tehdä tätä työkseni.",
         "Haen nyt ensimmäistä vakituista paikkaa. Olen avoin kaikille rooleille, opin nopeasti ja pidän haasteista.",
       ],
       skills: "Taidot",
