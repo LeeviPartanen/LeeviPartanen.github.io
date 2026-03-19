@@ -33,7 +33,7 @@ const content = {
       highlights: "Mitä opin",
     },
     contact: {
-      title: "Otetaan yhteyttä",
+      title: "Ota yhteyttä",
       subtitle: "Oli kyseessä sitten työtarjous, projekti tai vain jutustelu — kirjoita minulle.",
       name: "Nimi",
       email: "Sähköposti",
@@ -55,8 +55,8 @@ const content = {
     about: {
       title: "About me",
       body: [
-        "I'm a 19-year-old software developer who graduated from OSAO in December 2025. I started coding at 16 as a school assignment — a simple portfolio in HTML and CSS. Since then I've built a lot more.",
-        "I'm interested in embedded systems, web development, and AI. I like things that actually work — not just in theory. During my internship at SkyLED Finland OY, I planned and built React components in a real production environment.",
+        "I'm a 19-year-old software developer from Oulu. I'm interested in web development, embedded systems, and AI. I like things that actually work — not just in theory.",
+        "During my internship at SkyLED Finland OY, I planned and built React components in a real production environment. It confirmed what I already knew — this is what I want to do for a living.",
         "I'm now looking for my first permanent role. I'm open to any position, I learn fast, and I like a good challenge.",
       ],
       skills: "Skills",
