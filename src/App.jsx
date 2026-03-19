@@ -374,7 +374,7 @@ function ProjectDrawer({ project, lang, t, onClose }) {
             </h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               {project.images.map((img, i) => (
-                <PlaceholderImage key={i} src={img.src} label={img.label[lang]} />
+                <ProjectImage key={i} src={img.src} label={img.label[lang]} />
               ))}
             </div>
           </div>
