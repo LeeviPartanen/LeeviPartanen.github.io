@@ -104,8 +104,8 @@ const projects = [
     accent: "#2d7a5f",
     emoji: "📷",
     images: [
-      { label: { fi: "Järjestelmä", en: "System view" }, placeholder: "#c8e6dd" },
-      { label: { fi: "Web-käyttöliittymä", en: "Web interface" }, placeholder: "#b0d9ce" },
+      { label: { fi: "Järjestelmä", en: "System view" }, src: "/screenshots/valvontajarjestelma-1.png" },
+      { label: { fi: "Web-käyttöliittymä", en: "Web interface" }, src: "/screenshots/valvontajarjestelma-2.png" },
     ],
   },
   {
@@ -128,7 +128,7 @@ const projects = [
     accent: "#5b3fa6",
     emoji: "🎵",
     images: [
-      { label: { fi: "Visualisoija toiminnassa", en: "Visualizer in action" }, placeholder: "#d8d0f0" },
+      { label: { fi: "Visualisoija toiminnassa", en: "Visualizer in action" }, src: "/screenshots/Interactive_audio_visualizer.png" },
     ],
   },
   {
@@ -151,7 +151,7 @@ const projects = [
     accent: "#b07d1a",
     emoji: "⚡",
     images: [
-      { label: { fi: "Paneeli", en: "Dashboard view" }, placeholder: "#f0dfa0" },
+      { label: { fi: "Paneeli", en: "Dashboard view" }, src: "/screenshots/Energianhallintapaneeli.png" },
     ],
   },
   {
@@ -174,7 +174,7 @@ const projects = [
     accent: "#b03a2e",
     emoji: "🎮",
     images: [
-      { label: { fi: "Peli", en: "Game view" }, placeholder: "#f5c8c4" },
+      { label: { fi: "Peli", en: "Game view" }, src: "/screenshots/Ristinollapeli.png" },
     ],
   },
   {
@@ -197,7 +197,7 @@ const projects = [
     accent: "#1a4fa6",
     emoji: "📚",
     images: [
-      { label: { fi: "Etusivu", en: "Home page" }, placeholder: "#c0d4f5" },
+      { label: { fi: "Etusivu", en: "Home page" }, src: "/screenshots/Tarinatupa.png" },
     ],
   },
   {
@@ -220,8 +220,8 @@ const projects = [
     accent: "#6b2fa0",
     emoji: "🎨",
     images: [
-      { label: { fi: "Etusivu", en: "Home page" }, placeholder: "#ddd0f5" },
-      { label: { fi: "Värien testaus", en: "Color tester" }, placeholder: "#ccc0ee" },
+      { label: { fi: "Etusivu", en: "Home page" }, src: "/screenshots/Kotkantien_maalaus1.png" },
+      { label: { fi: "Värien testaus", en: "Color tester" }, src: "/screenshots/Kotkantien_maalaus2.png" },
     ],
   },
 ];
@@ -267,17 +267,12 @@ function SkillBar({ name, level, visible }) {
   );
 }
 
-function PlaceholderImage({ color, label }) {
+function ProjectImage({ src, label }) {
+  if (!src) return null;
   return (
-    <div style={{
-      background: color, borderRadius: "12px", height: "175px",
-      display: "flex", flexDirection: "column",
-      alignItems: "center", justifyContent: "center", gap: "6px",
-      border: "2px dashed #00000012",
-    }}>
-      <span style={{ fontSize: "1.6rem", opacity: 0.35 }}>🖼️</span>
-      <span style={{ fontSize: "0.75rem", color: "#888", fontWeight: 600 }}>{label}</span>
-      <span style={{ fontSize: "0.65rem", color: "#bbb", fontStyle: "italic" }}>Replace with real screenshot</span>
+    <div style={{ borderRadius: "12px", overflow: "hidden" }}>
+      <img src={src} alt={label} style={{ width: "100%", display: "block", borderRadius: "12px" }} />
+      <p style={{ fontSize: "0.75rem", color: "#888", marginTop: "6px" }}>{label}</p>
     </div>
   );
 }
@@ -379,7 +374,7 @@ function ProjectDrawer({ project, lang, t, onClose }) {
             </h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               {project.images.map((img, i) => (
-                <PlaceholderImage key={i} color={img.placeholder} label={img.label[lang]} />
+                <PlaceholderImage key={i} src={img.src} label={img.label[lang]} />
               ))}
             </div>
           </div>
